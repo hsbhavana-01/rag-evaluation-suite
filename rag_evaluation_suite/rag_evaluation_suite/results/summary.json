@@ -1,0 +1,21 @@
+{
+  "corpus_documents": 12,
+  "total_questions": 40,
+  "answerable_questions": 38,
+  "unanswerable_questions": 2,
+  "retrieval": {
+    "hit_at_1": 0.9737,
+    "hit_at_3": 0.9737,
+    "mrr": 0.9737
+  },
+  "generation": {
+    "all_questions_correct_keyword_proxy": 0.85,
+    "answerable_questions_correct_keyword_proxy": 0.8947,
+    "unanswerable_abstention_accuracy": 0.0
+  },
+  "unanswerable": {
+    "retrieval_false_positive_rate_any_ranked_doc": 1.0,
+    "note": "Proxy only; calibrate a similarity threshold on a separate validation set."
+  },
+  "scoring_note": "Generation correctness is an automated required-keyword proxy, not human-judged semantic correctness."
+}

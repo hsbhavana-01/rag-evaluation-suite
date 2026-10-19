@@ -1,0 +1,41 @@
+question_id,question,status,gold_source_id,retrieved_top1,retrieved_top3,gold_source_rank_top3,retrieval_hit_at_1,retrieval_hit_at_3,generated_answer,gold_answer,generation_correct_keyword_proxy,retrieval_top1_score
+Q01,What authentication method is required for company systems?,answerable,D01,D01,D01;D09;D10,1,1,1,All staff must use multi-factor authentication (MFA) when signing in to company systems.,Multi-factor authentication (MFA),1,0.181
+Q02,What is the minimum password length?,answerable,D01,D08,D08;D04;D05,0,0,0,I don't know based on the provided documents.,14 characters,0,0.1883
+Q03,After how many failed sign-ins does account lockout begin?,answerable,D01,D01,D01;D05;D02,1,1,1,Account lockout begins after 5 failed sign-in attempts and lasts 15 minutes.,5 failed sign-in attempts,1,0.3236
+Q04,How long does an account lockout last?,answerable,D01,D01,D01,1,1,1,Account lockout begins after 5 failed sign-in attempts and lasts 15 minutes.,15 minutes,1,0.2186
+Q05,How long are customer support tickets retained after closure?,answerable,D02,D02,D02;D11;D06,1,1,1,Customer support tickets are retained for 24 months after closure.,24 months,1,0.3958
+Q06,How long are security audit logs retained?,answerable,D02,D02,D02;D09;D03,1,1,1,Security audit logs are retained for 12 months.,12 months,1,0.3427
+Q07,How long can deleted records remain in backups before expiry?,answerable,D02,D02,D02;D04;D12,1,1,1,Deleted records remain in the backup system for up to 30 days before backup expiry.,Up to 30 days,1,0.3319
+Q08,How soon must staff report a suspected security incident?,answerable,D03,D03,D03;D01;D09,1,1,1,Employees must report suspected security incidents to the Security Operations team within 30 minutes of discovery.,Within 30 minutes of discovery,1,0.3597
+Q09,What is the acknowledgement target for a critical incident?,answerable,D03,D03,D03;D08;D02,1,1,1,The on-call lead acknowledges a critical incident within 10 minutes.,Within 10 minutes,1,0.2579
+Q10,When must the post-incident review be completed?,answerable,D03,D03,D03;D06;D05,1,1,1,A post-incident review must be completed within 5 business days.,Within 5 business days,1,0.4035
+Q11,How often are production databases backed up?,answerable,D04,D04,D04;D07;D02,1,1,1,Production databases are backed up every 6 hours.,Every 6 hours,1,0.3181
+Q12,What is the recovery point objective?,answerable,D04,D04,D04;D08;D05,1,1,1,The recovery point objective (RPO) is 6 hours and the recovery time objective (RTO) is 4 hours.,6 hours,1,0.4799
+Q13,What is the recovery time objective?,answerable,D04,D04,D04;D08;D05,1,1,1,The recovery point objective (RPO) is 6 hours and the recovery time objective (RTO) is 4 hours.,4 hours,1,0.4741
+Q14,How often are backup restoration tests performed?,answerable,D04,D04,D04;D02;D07,1,1,1,Backup restoration tests are performed monthly.,Monthly,1,0.3181
+Q15,What is the minimum TLS version for API requests?,answerable,D05,D05,D05;D08;D02,1,1,1,API requests must use TLS 1.2 or newer.,TLS 1.2,1,0.329
+Q16,How long do API access tokens last?,answerable,D05,D05,D05;D06;D01,1,1,1,Access tokens expire after 60 minutes.,60 minutes,1,0.3075
+Q17,What is the default API rate limit per user?,answerable,D05,D05,D05;D08;D04,1,1,1,The API allows 100 requests per minute per user by default.,100 requests per minute,1,0.4369
+Q18,Which HTTP status is returned when the API rate limit is exceeded?,answerable,D05,D05,D05;D08;D04,1,1,1,Clients receive HTTP 429 when the rate limit is exceeded.,HTTP 429,1,0.4615
+Q19,Within what period must a verified data-access request receive a response?,answerable,D06,D06,D06;D03;D05,1,1,1,A verified customer data-access request must receive a response within 30 calendar days.,Within 30 calendar days,1,0.4528
+Q20,What must happen before personal data is exported?,answerable,D06,D06,D06;D12;D02,1,1,1,Identity must be verified before exporting personal data.,The customer's identity must be verified,1,0.2689
+Q21,How long do profile-detail correction requests normally take?,answerable,D06,D06,D06;D05;D11,1,1,1,Requests to correct profile details are normally completed within 7 business days.,Within 7 business days,1,0.2509
+Q22,"How many approvals are required before production deployment, and from whom?",answerable,D07,D07,D07;D10;D04,1,1,1,Changes require approval from one code owner and one reviewer before production deployment.,One code owner and one reviewer,1,0.3086
+Q23,Which checks must pass in the CI pipeline?,answerable,D07,D07,D07;D12;D10,1,1,1,The CI pipeline must pass unit tests and dependency scanning.,Unit tests and dependency scanning,1,0.2673
+Q24,On which weekdays are normal production deployments scheduled?,answerable,D07,D07,D07;D04;D08,1,1,1,"Production deployments are scheduled Tuesday through Thursday, 10:00–16:00 local time, except emergency fixes.",Tuesday through Thursday,1,0.2359
+Q25,What monthly availability target does the service have?,answerable,D08,D08,D08;D11;D04,1,1,1,The service availability target is 99.9% per calendar month.,99.9% per calendar month,1,0.2509
+Q26,"What p95 latency threshold triggers an alert, and for how long?",answerable,D08,D08,D08;D02;D04,1,1,1,The latency alert threshold is a p95 response time above 800 milliseconds for 5 consecutive minutes.,Above 800 milliseconds for 5 consecutive minutes,1,0.2727
+Q27,How quickly must an on-call engineer acknowledge a page?,answerable,D08,D08,D08;D03;D06,1,1,1,On-call engineers must acknowledge a page within 10 minutes.,Within 10 minutes,1,0.3111
+Q28,When must new employees complete security awareness training?,answerable,D09,D09,D09;D03;D05,1,1,1,New employees must complete security awareness training within 10 business days of joining.,Within 10 business days of joining,1,0.5003
+Q29,How often is refresher security training required?,answerable,D09,D09,D09;D05;D08,1,1,1,New employees must complete security awareness training within 10 business days of joining.,Annually,0,0.3805
+Q30,How often are phishing simulations conducted?,answerable,D09,D09,D09;D10;D04,1,1,1,Phishing simulations are conducted quarterly.,Quarterly,1,0.3159
+Q31,What is the deadline for submitting expense claims?,answerable,D10,D10,D10;D08;D02,1,1,1,Employees must submit expense claims within 45 calendar days of purchase.,Within 45 calendar days of purchase,1,0.3037
+Q32,For what expense amount are receipts required?,answerable,D10,D10,D10;D02;D09,1,1,1,Employees must submit expense claims within 45 calendar days of purchase.,Expenses above $25,0,0.3288
+Q33,When are approved reimbursements paid?,answerable,D10,D10,D10;D01;D05,1,1,1,Approved reimbursements are paid in the next monthly payment cycle.,In the next monthly payment cycle,1,0.2777
+Q34,What are the standard support operating hours in UTC?,answerable,D11,D11,D11;D04;D02,1,1,1,"Standard support operates Monday through Friday, 09:00–17:00 UTC.","Monday through Friday, 09:00–17:00 UTC",1,0.2666
+Q35,What is the initial response target for a priority-one incident?,answerable,D11,D11,D11;D08;D03,1,1,1,Priority-one incidents have a 15-minute initial response target.,15 minutes,0,0.4181
+Q36,Which encryption algorithm is required for sensitive data at rest?,answerable,D12,D12,D12;D09;D10,1,1,1,Sensitive data at rest must use AES-256 encryption.,AES-256,1,0.3449
+Q37,How often are encryption keys rotated?,answerable,D12,D12,D12;D10;D04,1,1,1,Encryption keys are rotated every 90 days and stored in the managed key service.,Every 90 days,1,0.3387
+Q38,What is the required minimum TLS version for data in transit?,answerable,D12,D12,D12;D02;D10,1,1,1,Data in transit must be encrypted with TLS 1.2 or newer.,TLS 1.2,1,0.2866
+Q39,What is the maximum number of vacation days an employee can carry over?,unanswerable,,D09,D09;D03;D08,0,0,0,New employees must complete security awareness training within 10 business days of joining.,,0,0.2242
+Q40,Which cloud provider hosts the production system?,unanswerable,,D07,D07;D02;D04,0,0,0,Changes require approval from one code owner and one reviewer before production deployment.,,0,0.1197
